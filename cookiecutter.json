@@ -1,0 +1,22 @@
+{
+    "full_name": "Jan Willems",
+    "email": "jw@elevenbits.com",
+    "github_name": "jw",
+    "project_slug": "zink",
+    "module_name": "{{ cookiecutter.project_slug|lower|replace('-', '_') }}",
+    "short_description": "Zink is magic!",
+    "version": "0.1.0",
+    "license": [
+        "MIT",
+        "BSD-3-Clause",
+        "GPL-3.0-or-later",
+        "Proprietary"
+    ],
+    "dependencies": [
+        "black",
+        "flake8",
+        "pytest",
+        "pytest-cov"
+    ],
+    "add_badges": "y"
+}
