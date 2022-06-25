@@ -30,6 +30,7 @@ pylint = "^2.6.0"
 bandit = "^1.7.4"
 vulture = "^2.4"
 pre-commit = "^2.19.0"
+taskipy = "^1.10.2"
 
 #[tool.pytest.ini_options]
 ## Example
@@ -37,6 +38,9 @@ pre-commit = "^2.19.0"
 #    "ignore::DeprecationWarning:moto.*:",
 #    "ignore::DeprecationWarning:boto.*:",
 #]
+
+[tool.taskipy.tasks]
+test = "pytest --cov={{ cookiecutter.project_slug }} --cov-report html --cov-report xml"
 
 [tool.isort]
 multi_line_output = 3
