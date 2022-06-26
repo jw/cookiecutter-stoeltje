@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "cookiecutter-stoeltje"
+version = "0.1.0"
+description = "Cookiecutter template for a modern Python project."
+authors = ["Jan Willems <jw@elevenbits.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/jw/cookiecutter-stoeltje"
+repository = "https://github.com/jw/cookiecutter-stoeltje"
+documentation = "https://github.com/je/cookiecutter-stoeltje/blob/master/README.md"
+classifiers = [
+    "Environment :: Console",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/jw/cookiecutter-stoeltje/issues"
+
+[tool.poetry.dependencies]
+python = "^3.8.0"
+cookiecutter = "^2.1.1"
+# pytest-cookies = "^0.5.1"
+
+[tool.poetry.dev-dependencies]
+#pytest = "^5.0.0"
+#pytest-cov = "^2.10.1"
+#black = {version = "^20.8b1", allow-prereleases = true}
+#bandit = "^1.6.2"
+#pylint = "^2.6.0"
+#bump2version = "^1.0.1"
+#vulture = "^2.3"
+#jedi-language-server = "^0.22.0"
+#reorder-python-imports = "^2.3.6"
+#pyinstaller = "^4.1"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

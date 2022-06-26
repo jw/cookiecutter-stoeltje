@@ -1,12 +1,6 @@
 """Cookiecutter pre-generation hook."""
 
-import re
-import sys
+TERMINATOR = "\x1b[0m"
+SUCCESS = "\x1b[1;32m[SUCCESS]"
 
-MODULE_REGEX = r"^[_a-zA-Z][_a-zA-Z0-9]+$"
-
-module_name = "{{ cookiecutter.module_name }}"
-
-if not re.match(MODULE_REGEX, module_name):
-    print(f"ERROR: The project slug ({module_name}) is not a valid Python module name.")
-    sys.exit(1)
+print(f"{SUCCESS}: The project is created.  Have fun!{TERMINATOR}")
