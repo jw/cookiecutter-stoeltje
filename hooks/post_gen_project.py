@@ -13,3 +13,4 @@ module_name = "{{ cookiecutter.module_name }}"
 if not re.match(MODULE_REGEX, module_name):
     print(f"{ERROR}: The project slug ({module_name}) is not a valid Python module name.{TERMINATOR}")
     sys.exit(1)
+    
